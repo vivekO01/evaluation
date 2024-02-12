@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+	<style>
+	.box {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 100px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.hover-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #d03878;
+    position: relative;
+    margin: 0 auto;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.hover-circle:hover::after {
+    content: 'Paid';
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.dot-1, .dot-2, .dot-3, .dot-4, .dot-5, .dot-6, .dot-7, .dot-8 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fea900;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+
+.hover-circle:hover~.dot-1, .hover-circle:hover~.dot-2, .hover-circle:hover~.dot-3, .hover-circle:hover~.dot-4, .hover-circle:hover~.dot-5, .hover-circle:hover~.dot-6, .hover-circle:hover~.dot-7, .hover-circle:hover~.dot-8 {
+    opacity: 1;
+    transform: none;
+    top: 0;
+    left: 0;
+}
+
+.hover-circle:hover~.dot-2, .hover-circle:hover~.dot-7 {
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    background-color: #b6ed31;
+}
+
+.hover-circle:hover~.dot-3 {
+    left: 100%;
+    background-color: #fed4d2;
+}
+
+.hover-circle:hover~.dot-4,.hover-circle:hover~.dot-5 {
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #faf105;
+}
+
+.hover-circle:hover~.dot-5 {
+    left: 100%;
+    background-color: #040dfe;
+}
+
+.hover-circle:hover~.dot-6,.hover-circle:hover~.dot-7,.hover-circle:hover~.dot-8 {
+    top: 100%;
+    background-color: #fe1400;
+}
+
+.hover-circle:hover~.dot-7 {
+
+    background-color: #007000;
+}
+
+.hover-circle:hover~.dot-8 {
+    left: 100%;
+    background-color: #f4a3f0;
+}
+
+	</style>
+</head>
+<body>
+		<div class="box">
+			<div class="hover-circle"></div>
+			<div class="dot-1"></div>
+			<div class="dot-2"></div>
+			<div class="dot-3"></div>
+			<div class="dot-4"></div>
+			<div class="dot-5"></div>
+			<div class="dot-6"></div>
+			<div class="dot-7"></div>
+			<div class="dot-8"></div>
+		</div>
+</body>
+</html>
