@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      main {
+        height: 50vh;
+        width: 100%;
+        /* background-color: orange; */
+        display: flex;
+        gap: 2px;
+      }
+      .nav {
+        height: 100px;
+        width: 100%;
+        background-color: #a4a4de;
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+      }
+      .cont {
+        height: auto;
+        width: 100%;
+        background-color: #a4a4de;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+      .child1 {
+        height: 130px;
+        width: 130px;
+        display: flex;
+        gap: 5px;
+      }
+      .cont > div:nth-child(1) {
+        background-color: palegoldenrod;
+        background-image: url("1.png");
+        background-position: center;
+        background-size: cover;
+      }
+      .cont > div:nth-child(1) {
+        background-color: palegreen;
+        background-image: url("1.png");
+        background-position: center;
+        background-size: cover;
+      }
+      .cont > div:nth-child(2) {
+        background-color: tan;
+        background-image: url("2.png");
+        background-position: center;
+        background-size: cover;
+      }
+      .cont > div:nth-child(3) {
+        background-color: blue;
+        background-image: url("3.png");
+        background-position: center;
+        background-size: cover;
+      }
+      .cont > div:nth-child(4) {
+        background-color: red;
+        background-image: url("4.png");
+        background-position: center;
+        background-size: cover;
+      }
+      .cont > div:nth-child(5) {
+        background-color: yellow;
+        background-image: url("5.png");
+        background-position: center;
+        background-size: cover;
+      }
+      .cont > div:nth-child(6) {
+        background-color: palegoldenrod;
+        background-image: url("6.png");
+        background-position: center;
+        background-size: cover;
+      }
+      .sect {
+        height: 500px;
+        width: 50%;
+        /* background-color: palevioletred; */
+      }
+      .sect1 {
+        height: 500px;
+        width: 50%;
+        /* background-color: olive; */
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="sect">
+        <div class="nav">ENTERPRISES</div>
+
+        <div class="cont">
+          <div class="child1"></div>
+          <div class="child1"></div>
+          <div class="child1"></div>
+          <div class="child1"></div>
+          <div class="child1"></div>
+          <div class="child1"></div>
+        </div>
+      </div>
+      <div class="sect1">
+        <div class="nav">UNICORN</div>
+
+        <div class="cont">
+          <div class="child1"></div>
+          <div class="child1"></div>
+          <div class="child1"></div>
+          <div class="child1"></div>
+          <div class="child1"></div>
+          <div class="child1"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
